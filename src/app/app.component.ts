@@ -14,8 +14,9 @@ export class AppComponent  {
     this.name = this.testService.getMessage('Domenico');
     this.cognome = this.testService.getCognome('Scorcia');
   }
+  liClicked() {
+    console.log('li clicked');
+  }
 }
 
-export class Test{
-  
-}
+

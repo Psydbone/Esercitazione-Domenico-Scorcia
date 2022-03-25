@@ -1,10 +1,14 @@
 <hello name="{{ name }}"></hello>
-<test-component [testProperty]="3" test-directive></test-component>
+<test-component
+  [testProperty]="3"
+  test-directive
+  (emitter)="liClicked()"
+></test-component>
 <test1-component test-directive></test1-component>
 <p>Start editing to see some magic happen :)</p>
 <h1 test-directive>TEST</h1>
-{{ name }} 
-<br />
-{{ cognome }}
 <table-component></table-component>
-
+<br />
+{{ name }}
+<br />
+<input type="text" [(ngModel)]="cognome" /> {{ cognome }}

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'test-component',
@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
    @Input() testProperty: number ;
+   @Output() emitter: EventEmitter<void> = new EventEmitter();
 
   constructor() {
     //this.testProperty = 'Costruttore';
@@ -16,6 +17,7 @@ export class TestComponent implements OnInit {
   }
 
   handler(){
+    this.emitter.emit();
     console.log('clicked');
   }
 }
