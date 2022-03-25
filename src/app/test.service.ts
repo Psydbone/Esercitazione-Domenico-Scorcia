@@ -7,7 +7,7 @@ export class TestService {
     return 'Ciao ' + name;
   }
   public getCognome(cognome:string):string{
-    return 'Il tuo cognome è ' + cognome;
+    return cognome;
   }
 }
 
