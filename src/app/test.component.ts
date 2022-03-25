@@ -14,4 +14,8 @@ export class TestComponent implements OnInit {
   ngOnInit(): void {
     //this.testProperty ='onInit';
   }
+
+  handler(){
+    console.log('clicked');
+  }
 }
