@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent} from './app.component';
 import { HelloComponent } from './hello.component';
@@ -14,7 +14,7 @@ import { ArraayDirective } from './array.directive';
 import { RegisterUserComponent } from './register-user.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ,TestModule],
+  imports:      [ BrowserModule, ReactiveFormsModule, FormsModule ,TestModule],
   declarations: [ AppComponent, HelloComponent, TestDirective,TableComponent,ArraayDirective, RegisterUserComponent],
   providers : [TestService,TestService2,ArrayService],
   bootstrap:    [ AppComponent ]
