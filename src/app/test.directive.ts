@@ -9,6 +9,5 @@ export class TestDirective implements OnInit {
   }
 ngOnInit(): void {
   this.element.nativeElement.getElementsByTagName('li')[0].style.color="red";
-  this.element.nativeElement.style.color="blue";
 }
 }

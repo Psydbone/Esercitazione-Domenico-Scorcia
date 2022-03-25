@@ -15,6 +15,7 @@ export class AppComponent  {
     this.cognome = this.testService.getCognome('Scorcia');
   }
   liClicked() {
+    this.cognome="changed"
     console.log('li clicked');
   }
 }
