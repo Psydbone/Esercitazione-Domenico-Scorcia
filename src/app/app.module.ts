@@ -12,10 +12,13 @@ import { TableComponent } from './table.component';
 import { ArrayService } from './array.service';
 import { ArraayDirective } from './array.directive';
 import { RegisterUserComponent } from './register-user.component';
+import { Page1Component } from './page1.component';
+import { Page2Component } from './page2.component';
+import { Page3Component } from './page3.component';
 
 @NgModule({
   imports:      [ BrowserModule, ReactiveFormsModule, FormsModule ,TestModule],
-  declarations: [ AppComponent, HelloComponent, TestDirective,TableComponent,ArraayDirective, RegisterUserComponent],
+  declarations: [ AppComponent, HelloComponent, TestDirective,TableComponent,ArraayDirective, RegisterUserComponent,Page1Component,Page2Component,Page3Component],
   providers : [TestService,TestService2,ArrayService],
   bootstrap:    [ AppComponent ]
 })
