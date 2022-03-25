@@ -7,10 +7,10 @@
   </tr>
 </thead>
 <tbody>
-  <tr *ngFor="let people of data">
-    <td>{{ people.name }}</td>
-    <td>{{ people.surname }}</td>
-    <td>{{ people.temperature }}</td>
+  <tr *ngFor="let person of data">
+    <td>{{ person.name }}</td>
+    <td>{{ person.surname }}</td>
+    <td [class.colour]='person.temperature > 37'>{{ person.temperature }}</td>
   </tr>
 </tbody>
 </table>
