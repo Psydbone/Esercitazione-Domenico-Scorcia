@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { ArrayService } from './array.service';
 
 @Component({
   selector: 'register-user',
@@ -8,9 +9,8 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class RegisterUserComponent {
   inputForm: FormGroup;
-ArrayService: any;
 
-  constructor() {
+  constructor(private arrayService : ArrayService) {
     this.inputForm = new FormGroup({
       name: new FormControl(''),
       surname: new FormControl(''),
@@ -23,6 +23,6 @@ ArrayService: any;
     console.log(this.inputForm.value.name);
     console.log(this.inputForm.value.surname);
     console.log(this.inputForm.value.temperature);
-    this.ArrayService.AddPerson(this.inputForm.value.name, this.inputForm.value.surname, this.inputForm.value.temperature)
+    this.arrayService.AddPerson(this.inputForm.value.name, this.inputForm.value.surname, this.inputForm.value.temperature)
   }
 }
