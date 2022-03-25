@@ -17,6 +17,7 @@ import { Page2Component } from './page2.component';
 import { Page3Component } from './page3.component';
 import { RouterModule } from '@angular/router';
 import { Page4Component } from './page4.component';
+import { firstUserComponent } from './firstuser.component';
 
 const routes = [
    {path:'utenti',component:Page1Component}
@@ -27,7 +28,7 @@ const routes = [
 
 @NgModule({
   imports:      [ BrowserModule, ReactiveFormsModule, FormsModule ,TestModule,RouterModule.forRoot(routes)],
-  declarations: [ AppComponent, HelloComponent, TestDirective,TableComponent,ArraayDirective, RegisterUserComponent,Page1Component,Page2Component,Page3Component,Page4Component],
+  declarations: [ AppComponent, HelloComponent, TestDirective,TableComponent,ArraayDirective, RegisterUserComponent,Page1Component,Page2Component,Page3Component,Page4Component,firstUserComponent],
   providers : [TestService,TestService2,ArrayService],
   bootstrap:    [ AppComponent ]
 })
