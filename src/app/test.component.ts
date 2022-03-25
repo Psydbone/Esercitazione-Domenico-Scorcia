@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['test.component.css'],
 })
 export class TestComponent implements OnInit {
-   @Input() testProperty: number ;
+   @Input() testProperty: string ;
    @Output() emitter: EventEmitter<void> = new EventEmitter();
 
   constructor() {

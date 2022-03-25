@@ -18,6 +18,10 @@ export class ArrayService {
   public AddPerson(vname: string, vsurname: string, vtemperature: number){
     this.personArray.push(new Person(vname, vsurname, vtemperature))
   }
+
+  public GetFirstPerson(){
+    return this.personArray[0];
+  }
 }
 
 export class Person {

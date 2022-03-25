@@ -1,4 +1,4 @@
-<hello name="{{ name }}"></hello>
+<!--<hello name="{{ name }}"></hello>
 <test-component
   [testProperty]="3"
   test-directive
@@ -16,7 +16,34 @@
 {{ cognome }}
 <table-component></table-component>
 <register-user></register-user>
+<br>
 
 <page1-component></page1-component>
-<page2-component></page1-component>
-<page3-component></page1-component>
+<page2-component></page2-component>
+<page3-component></page3-component> -->
+
+<p><a routerLink="/utenti" routerLinkActive="active">Lista Utenti</a></p>
+<p>
+  <a routerLink="/registrazione" routerLinkActive="active"
+    >Registrazione Utente</a
+  >
+</p>
+<p>
+  <a
+    routerLink="/assistenza"
+    routerLinkActive="active"
+    routerLinkActive="active"
+    >Assistenza</a
+  >
+  <p>
+  <a
+    routerLink="/lista"
+    routerLinkActive="active"
+    routerLinkActive="active"
+    >Lista</a
+  >
+</p>
+
+<router-outlet></router-outlet>
+<br />
+<div>FOOTER</div>
