@@ -7,6 +7,7 @@ import { ArrayService, Person } from './array.service';
   styleUrls:['./table.component.css']
 })
 export class TableComponent {
+
   data: Person[];
   constructor(private es: ArrayService) {
     this.data = this.es.getArray();

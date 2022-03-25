@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'test-component',
@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['test.component.css'],
 })
 export class TestComponent implements OnInit {
-  testProperty: string = '';
+   @Input() testProperty: number ;
 
   constructor() {
-    this.testProperty = 'Costruttore';
+    //this.testProperty = 'Costruttore';
   }
   ngOnInit(): void {
     //this.testProperty ='onInit';
